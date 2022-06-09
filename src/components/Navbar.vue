@@ -459,7 +459,7 @@ export default {
       });
     },
     moveTo(path) {
-      this.$router.push(path);
+      this.$router.push(path).catch(() => {});
       this.currentPath = path;
       if (window.innerWidth < 769) {
         this.closeNav();

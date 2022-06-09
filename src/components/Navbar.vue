@@ -80,13 +80,31 @@
               API
             </button>
           </div>
-          <div class="h-100 d-flex" style="width: 6%">
+          <div class="h-100 d-flex" style="width: 5%">
             <button
               class="web-nav-button github m-auto"
               type="button"
               @click="navigateToGithub"
             >
-              <img class="github-image m-auto" src="../assets/octocat.png" />
+              <img class="icon-image m-auto" src="../assets/octocat.png" />
+            </button>
+          </div>
+          <div class="h-100 d-flex" style="width: 5%">
+            <button
+              class="web-nav-button m-auto"
+              type="button"
+              @click="linkTo('https://hub.docker.com/r/artifriends/saseul-network')"
+            >
+              <img class="icon-image m-auto" src="../assets/docker.png" />
+            </button>
+          </div>
+          <div class="h-100 d-flex" style="width: 5%">
+            <button
+              class="web-nav-button m-auto"
+              type="button"
+              @click="linkTo('https://explorer.saseul.com')"
+            >
+              <img class="icon-image m-auto" src="../assets/explorer.png" />
             </button>
           </div>
           <div class="col"></div>
@@ -152,12 +170,12 @@
                 border: none;
                 box-shadow: none;
                 background-color: transparent;
-                width: 35px;
+                width: 38px;
               "
             >
               <div
                 style="
-                  width: 100%;
+                  width: 24px;
                   height: 3px;
                   background-color: white;
                   margin: 5px 0;
@@ -165,7 +183,7 @@
               ></div>
               <div
                 style="
-                  width: 100%;
+                  width: 24px;
                   height: 3px;
                   background-color: white;
                   margin: 5px 0;
@@ -173,7 +191,7 @@
               ></div>
               <div
                 style="
-                  width: 100%;
+                  width: 24px;
                   height: 3px;
                   background-color: white;
                   margin: 5px 0;
@@ -197,11 +215,11 @@
           >
             <div class="h-100 d-flex">
               <button
-                class="web-nav-button github m-auto"
+                class="web-nav-button docker m-auto"
                 type="button"
-                @click="navigateToGithub"
+                @click="linkTo('https://hub.docker.com/r/artifriends/saseul-network')"
               >
-                <img class="github-image" src="../assets/octocat.png" />
+                <img class="icon-image" src="../assets/docker.png" />
               </button>
             </div>
           </div>
@@ -314,6 +332,22 @@
               @click="linkTo('https://api.saseul.com')"
             >
               API
+            </button>
+          </div>
+          <div class="side-text mb-3">
+            <button
+              class="mobile-nav-button"
+              @click="linkTo('https://explorer.saseul.com')"
+            >
+              Explorer
+            </button>
+          </div>
+          <div class="side-text mb-3">
+            <button
+              class="mobile-nav-button"
+              @click="navigateToGithub"
+            >
+              Github
             </button>
           </div>
           <div class="side-text">
@@ -490,11 +524,11 @@ button {
   cursor: pointer;
 }
 
-.github {
-  width: 105px;
+.docker {
+  width: 65px;
 }
 
-.github-image {
+.icon-image {
   height: 24px;
   margin-bottom: -5px;
 }

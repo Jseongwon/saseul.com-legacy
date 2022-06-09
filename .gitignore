@@ -14,3 +14,14 @@ selenium-debug.log
 *.ntvs*
 *.njsproj
 *.sln
+.git
+node_modules
+plugins
+platforms
+package-lock.json
+dist
+*.pem
+**/.DS_Store
+*~
+*.txt
+
